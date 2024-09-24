@@ -1,6 +1,9 @@
 {
-  "name": "houston-angular",
-  "version": "0.0.1",
+  "name": "@houstonicons/angular",
+  "version": "2.0.2",
+  "description": "A library of icons for Angular",
+  "author": "castrogusttavo",
+  "license": "CC0-1.0",
   "peerDependencies": {
     "@angular/common": "^18.2.0",
     "@angular/core": "^18.2.0"
@@ -8,5 +11,16 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "npm@20.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/castrogusttavo/houston-angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/castrogusttavo/houston-angular.git/issues"
+  }
 }
