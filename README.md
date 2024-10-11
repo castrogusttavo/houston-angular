@@ -58,60 +58,54 @@ yarn add @houstonicons/angular
 
 Import the icons you need from the library and integrate them into your Angular components. Here's how you can customize the icons to fit your needs:
 
-### Control Icon Size
-Adjust the size of your icons by passing a `iconSize` input:
+## Important
+
+Once installed, in your ``.component.ts`` you will be able to import HoustonIconsModule, and individual icons from the @houstonicons/angular package:
 
 ```typescript
-import { Component } from '@angular/core';
-import { Home01Icon } from '@houstonicons/angular';
+import { HoustonIconsModule } from '@houstonicons/angular'
 
-@Component({
-  selector: 'app-example',
-  template: `<app-home01-icon [iconSize]="32"></app-home01-icon>`, // Custom size
-})
-export class ExampleComponent {}
+@NgModule {(
+  imports: [...,HoustonIconsModule],
+)}
+```
+
+### Control Icon Size
+Adjust the size of your icons by passing a `size` input:
+
+```typescript
+    <houston-home-01-icon 
+      [size]="48" // Custom size
+    ></houston-abacus-icon>
 ```
 
 ### Customize Icon Color
 Change the color of your icons by passing a `color` input:
 
 ```typescript
-import { Component } from '@angular/core';
-import { MarketingIcon } from '@houstonicons/angular';
-
-@Component({
-  selector: 'app-example',
-  template: `<app-marketing-icon [color]="'#00FF00'"></app-marketing-icon>`, // Green color
-})
-export class ExampleComponent {}
+    <houston-marketing-icon 
+      [color]="'#00FF00'" // Green color
+    ></houston-abacus-icon>
 ```
 
 ### Adjust Icon Corners
-Easily modify the corner style of your icons by using the `cornerStyle` input:
+Easily modify the corner style of your icons by using the `type` input:
 
 ```typescript
-import { Component } from '@angular/core';
-import { ListSettingIcon } from '@houstonicons/angular';
-
-@Component({
-  selector: 'app-example',
-  template: `<app-list-setting-icon [cornerStyle]="'rounded'"></app-list-setting-icon>`, // Rounded corners
-})
-export class ExampleComponent {}
+    <houston-list-setting-icon 
+      [type]="'rounded'" // Rounded corners
+    ></houston-abacus-icon>
 ```
 
 ### Control Icon Fill Type
-Set the fill style of your icons using the `fillType` input:
+Set the fill style of your icons using the `variant` input:
 
 ```typescript
-import { Component } from '@angular/core';
-import { AddSquareIcons } from '@houstonicons/angular';
-
-@Component({
-  selector: 'app-example',
-  template: `<app-add-square-icon [fillType]="'solid'"></app-add-square-icon>`, // Solid fill
-})
 export class ExampleComponent {}
+
+    <houston-add-square-icon 
+      [variant]="'solid'" // Solid fill
+    ></houston-abacus-icon>
 ```
 
 ## Live Example

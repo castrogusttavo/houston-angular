@@ -6,16 +6,16 @@ import { HttpClient } from '@angular/common/http';
   selector: 'houston-icon',
   template: `
     <div [innerHtml]="svgElement" 
-         [style.width.px]="iconSize" 
-         [style.height.px]="iconSize" 
+         [style.width.px]="size" 
+         [style.height.px]="size" 
          [style.color]="color"></div>
   `,
 })
 export class IconComponent implements OnInit {
   @Input() iconName: string = 'default-icon';
-  @Input() iconSize: number = 24;
-  @Input() fillType: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone' = 'stroke';
-  @Input() cornerStyle: 'sharp' | 'rounded' | 'standard' = 'rounded';
+  @Input() size: number = 24;
+  @Input() variant: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone' = 'stroke';
+  @Input() type: 'sharp' | 'rounded' | 'standard' = 'rounded';
   @Input() color: string = '#000000';
 
   svgElement: SafeHtml | null = null;
@@ -27,7 +27,7 @@ export class IconComponent implements OnInit {
   }
 
   loadSvg(): void {
-    const iconUrl = `https://cdn.hugeicons.com/icons/${this.iconName}-${this.fillType}-${this.cornerStyle}.svg`;
+    const iconUrl = `https://cdn.hugeicons.com/icons/${this.iconName}-${this.variant}-${this.type}.svg`;
 
     this.http.get(iconUrl, { responseType: 'text' }).subscribe(
       (svgText: string) => {
@@ -35,8 +35,8 @@ export class IconComponent implements OnInit {
         const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
         const svgNode = svgDoc.documentElement;
 
-        svgNode.setAttribute('width', this.iconSize.toString());
-        svgNode.setAttribute('height', this.iconSize.toString());
+        svgNode.setAttribute('width', this.size.toString());
+        svgNode.setAttribute('height', this.size.toString());
         svgNode.setAttribute('color', this.color);
 
         svgNode.querySelectorAll('*').forEach((element) => {

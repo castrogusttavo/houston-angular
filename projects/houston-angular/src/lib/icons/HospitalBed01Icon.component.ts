@@ -7,16 +7,16 @@ import { IconComponent } from '../icon.component';
   template: `
     <houston-icon 
       [iconName]="'hospital-bed-01'" 
-      [iconSize]="iconSize" 
-      [fillType]="fillType" 
-      [cornerStyle]="cornerStyle" 
+      [size]="size" 
+      [variant]="variant" 
+      [type]="type" 
       [color]="color">
     </houston-icon>
   `,
 })
 export class HospitalBed01IconComponent {
-  @Input() iconSize: number = 24;
-  @Input() fillType: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone' = 'stroke';
-  @Input() cornerStyle: 'sharp' | 'rounded' | 'standard' = 'standard';
+  @Input() size: number = 24;
+  @Input() variant: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone' = 'stroke';
+  @Input() type: 'sharp' | 'rounded' | 'standard' = 'standard';
   @Input() color: string = '#000000';
 }
