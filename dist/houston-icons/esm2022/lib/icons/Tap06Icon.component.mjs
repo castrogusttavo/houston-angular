@@ -3,19 +3,19 @@ import * as i0 from "@angular/core";
 import * as i1 from "../icon.component";
 export class Tap06IconComponent {
     size = 24;
-    variant = 'stroke';
+    variants = 'stroke';
     type = 'standard';
     color = '#000000';
     static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.2.5", ngImport: i0, type: Tap06IconComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "18.2.5", type: Tap06IconComponent, selector: "houston-tap-06-icon", inputs: { size: "size", variant: "variant", type: "type", color: "color" }, ngImport: i0, template: `
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "18.2.5", type: Tap06IconComponent, selector: "houston-tap-06-icon", inputs: { size: "size", variants: "variants", type: "type", color: "color" }, ngImport: i0, template: `
     <houston-icon 
       [iconName]="'tap-06'" 
       [size]="size" 
-      [variant]="variant" 
+      [variants]="variants" 
       [type]="type" 
       [color]="color">
     </houston-icon>
-  `, isInline: true, dependencies: [{ kind: "component", type: i1.IconComponent, selector: "houston-icon", inputs: ["iconName", "size", "variant", "type", "color"] }] });
+  `, isInline: true, dependencies: [{ kind: "component", type: i1.IconComponent, selector: "houston-icon", inputs: ["iconName", "size", "variants", "type", "color"] }] });
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.5", ngImport: i0, type: Tap06IconComponent, decorators: [{
             type: Component,
@@ -25,7 +25,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.5", ngImpor
     <houston-icon 
       [iconName]="'tap-06'" 
       [size]="size" 
-      [variant]="variant" 
+      [variants]="variants" 
       [type]="type" 
       [color]="color">
     </houston-icon>
@@ -33,11 +33,11 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.5", ngImpor
                 }]
         }], propDecorators: { size: [{
                 type: Input
-            }], variant: [{
+            }], variants: [{
                 type: Input
             }], type: [{
                 type: Input
             }], color: [{
                 type: Input
             }] } });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGFwMDZJY29uLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL2hvdXN0b24tYW5ndWxhci9zcmMvbGliL2ljb25zL1RhcDA2SWNvbi5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EsT0FBTyxFQUFFLFNBQVMsRUFBRSxLQUFLLEVBQUUsTUFBTSxlQUFlLENBQUM7OztBQWVqRCxNQUFNLE9BQU8sa0JBQWtCO0lBQ3BCLElBQUksR0FBVyxFQUFFLENBQUM7SUFDbEIsT0FBTyxHQUF3RCxRQUFRLENBQUM7SUFDeEUsSUFBSSxHQUFxQyxVQUFVLENBQUM7SUFDcEQsS0FBSyxHQUFXLFNBQVMsQ0FBQzt1R0FKeEIsa0JBQWtCOzJGQUFsQixrQkFBa0IsdUlBVm5COzs7Ozs7OztHQVFUOzsyRkFFVSxrQkFBa0I7a0JBWjlCLFNBQVM7bUJBQUM7b0JBQ1QsUUFBUSxFQUFFLHFCQUFxQjtvQkFDL0IsUUFBUSxFQUFFOzs7Ozs7OztHQVFUO2lCQUNGOzhCQUVVLElBQUk7c0JBQVosS0FBSztnQkFDRyxPQUFPO3NCQUFmLEtBQUs7Z0JBQ0csSUFBSTtzQkFBWixLQUFLO2dCQUNHLEtBQUs7c0JBQWIsS0FBSyIsInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IHsgQ29tcG9uZW50LCBJbnB1dCB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHsgSWNvbkNvbXBvbmVudCB9IGZyb20gJy4uL2ljb24uY29tcG9uZW50JztcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiAnaG91c3Rvbi10YXAtMDYtaWNvbicsXG4gIHRlbXBsYXRlOiBgXG4gICAgPGhvdXN0b24taWNvbiBcbiAgICAgIFtpY29uTmFtZV09XCIndGFwLTA2J1wiIFxuICAgICAgW3NpemVdPVwic2l6ZVwiIFxuICAgICAgW3ZhcmlhbnRdPVwidmFyaWFudFwiIFxuICAgICAgW3R5cGVdPVwidHlwZVwiIFxuICAgICAgW2NvbG9yXT1cImNvbG9yXCI+XG4gICAgPC9ob3VzdG9uLWljb24+XG4gIGAsXG59KVxuZXhwb3J0IGNsYXNzIFRhcDA2SWNvbkNvbXBvbmVudCB7XG4gIEBJbnB1dCgpIHNpemU6IG51bWJlciA9IDI0O1xuICBASW5wdXQoKSB2YXJpYW50OiAnc3Ryb2tlJyB8ICdzb2xpZCcgfCAnYnVsaycgfCAnZHVvdG9uZScgfCAndHdvdG9uZScgPSAnc3Ryb2tlJztcbiAgQElucHV0KCkgdHlwZTogJ3NoYXJwJyB8ICdyb3VuZGVkJyB8ICdzdGFuZGFyZCcgPSAnc3RhbmRhcmQnO1xuICBASW5wdXQoKSBjb2xvcjogc3RyaW5nID0gJyMwMDAwMDAnO1xufVxuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGFwMDZJY29uLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL2hvdXN0b24tYW5ndWxhci9zcmMvbGliL2ljb25zL1RhcDA2SWNvbi5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EsT0FBTyxFQUFFLFNBQVMsRUFBRSxLQUFLLEVBQUUsTUFBTSxlQUFlLENBQUM7OztBQWVqRCxNQUFNLE9BQU8sa0JBQWtCO0lBQ3BCLElBQUksR0FBVyxFQUFFLENBQUM7SUFDbEIsUUFBUSxHQUF3RCxRQUFRLENBQUM7SUFDekUsSUFBSSxHQUFxQyxVQUFVLENBQUM7SUFDcEQsS0FBSyxHQUFXLFNBQVMsQ0FBQzt1R0FKeEIsa0JBQWtCOzJGQUFsQixrQkFBa0IseUlBVm5COzs7Ozs7OztHQVFUOzsyRkFFVSxrQkFBa0I7a0JBWjlCLFNBQVM7bUJBQUM7b0JBQ1QsUUFBUSxFQUFFLHFCQUFxQjtvQkFDL0IsUUFBUSxFQUFFOzs7Ozs7OztHQVFUO2lCQUNGOzhCQUVVLElBQUk7c0JBQVosS0FBSztnQkFDRyxRQUFRO3NCQUFoQixLQUFLO2dCQUNHLElBQUk7c0JBQVosS0FBSztnQkFDRyxLQUFLO3NCQUFiLEtBQUsiLCJzb3VyY2VzQ29udGVudCI6WyJcbmltcG9ydCB7IENvbXBvbmVudCwgSW5wdXQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IEljb25Db21wb25lbnQgfSBmcm9tICcuLi9pY29uLmNvbXBvbmVudCc7XG5cbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogJ2hvdXN0b24tdGFwLTA2LWljb24nLFxuICB0ZW1wbGF0ZTogYFxuICAgIDxob3VzdG9uLWljb24gXG4gICAgICBbaWNvbk5hbWVdPVwiJ3RhcC0wNidcIiBcbiAgICAgIFtzaXplXT1cInNpemVcIiBcbiAgICAgIFt2YXJpYW50c109XCJ2YXJpYW50c1wiIFxuICAgICAgW3R5cGVdPVwidHlwZVwiIFxuICAgICAgW2NvbG9yXT1cImNvbG9yXCI+XG4gICAgPC9ob3VzdG9uLWljb24+XG4gIGAsXG59KVxuZXhwb3J0IGNsYXNzIFRhcDA2SWNvbkNvbXBvbmVudCB7XG4gIEBJbnB1dCgpIHNpemU6IG51bWJlciA9IDI0O1xuICBASW5wdXQoKSB2YXJpYW50czogJ3N0cm9rZScgfCAnc29saWQnIHwgJ2J1bGsnIHwgJ2R1b3RvbmUnIHwgJ3R3b3RvbmUnID0gJ3N0cm9rZSc7XG4gIEBJbnB1dCgpIHR5cGU6ICdzaGFycCcgfCAncm91bmRlZCcgfCAnc3RhbmRhcmQnID0gJ3N0YW5kYXJkJztcbiAgQElucHV0KCkgY29sb3I6IHN0cmluZyA9ICcjMDAwMDAwJztcbn1cbiJdfQ==

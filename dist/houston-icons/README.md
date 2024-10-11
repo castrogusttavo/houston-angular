@@ -60,7 +60,7 @@ Import the icons you need from the library and integrate them into your Angular 
 
 ## Important
 
-Once installed, in your .component.ts you will be able to import HoustonIconsModule, and individual icons from the @houstonicons/angular package:
+Once installed, in your ``.component.ts`` you will be able to import HoustonIconsModule, and individual icons from the @houstonicons/angular package:
 
 ```typescript
 import { HoustonIconsModule } from '@houstonicons/angular'

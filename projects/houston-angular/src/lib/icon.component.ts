@@ -14,7 +14,7 @@ import { HttpClient } from '@angular/common/http';
 export class IconComponent implements OnInit {
   @Input() iconName: string = 'default-icon';
   @Input() size: number = 24;
-  @Input() variant: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone' = 'stroke';
+  @Input() variants: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone' = 'stroke';
   @Input() type: 'sharp' | 'rounded' | 'standard' = 'rounded';
   @Input() color: string = '#000000';
 
@@ -27,7 +27,7 @@ export class IconComponent implements OnInit {
   }
 
   loadSvg(): void {
-    const iconUrl = `https://cdn.hugeicons.com/icons/${this.iconName}-${this.variant}-${this.type}.svg`;
+    const iconUrl = `https://cdn.hugeicons.com/icons/${this.iconName}-${this.variants}-${this.type}.svg`;
 
     this.http.get(iconUrl, { responseType: 'text' }).subscribe(
       (svgText: string) => {

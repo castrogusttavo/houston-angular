@@ -7,7 +7,7 @@ export declare class IconComponent implements OnInit {
     private http;
     iconName: string;
     size: number;
-    variant: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone';
+    variants: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone';
     type: 'sharp' | 'rounded' | 'standard';
     color: string;
     svgElement: SafeHtml | null;
@@ -15,5 +15,5 @@ export declare class IconComponent implements OnInit {
     ngOnInit(): void;
     loadSvg(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<IconComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<IconComponent, "houston-icon", never, { "iconName": { "alias": "iconName"; "required": false; }; "size": { "alias": "size"; "required": false; }; "variant": { "alias": "variant"; "required": false; }; "type": { "alias": "type"; "required": false; }; "color": { "alias": "color"; "required": false; }; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<IconComponent, "houston-icon", never, { "iconName": { "alias": "iconName"; "required": false; }; "size": { "alias": "size"; "required": false; }; "variants": { "alias": "variants"; "required": false; }; "type": { "alias": "type"; "required": false; }; "color": { "alias": "color"; "required": false; }; }, {}, never, never, false, never>;
 }

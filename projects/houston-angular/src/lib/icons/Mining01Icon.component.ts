@@ -8,7 +8,7 @@ import { IconComponent } from '../icon.component';
     <houston-icon 
       [iconName]="'mining-01'" 
       [size]="size" 
-      [variant]="variant" 
+      [variants]="variants" 
       [type]="type" 
       [color]="color">
     </houston-icon>
@@ -16,7 +16,7 @@ import { IconComponent } from '../icon.component';
 })
 export class Mining01IconComponent {
   @Input() size: number = 24;
-  @Input() variant: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone' = 'stroke';
+  @Input() variants: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone' = 'stroke';
   @Input() type: 'sharp' | 'rounded' | 'standard' = 'standard';
   @Input() color: string = '#000000';
 }
